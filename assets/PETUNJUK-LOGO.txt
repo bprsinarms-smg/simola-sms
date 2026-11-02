@@ -1,0 +1,9 @@
+LOGO BPR SIMOLA SMS
+
+Simpan file logo perusahaan di folder assets dengan nama persis: logo-bpr.png
+
+Contoh lokasi: assets/logo-bpr.png
+
+Gunakan format PNG dengan latar transparan bila tersedia. Logo akan tampil otomatis di sebelah kiri nama SIMOLA SMS.
+
+Catatan: logo BPR berbeda dari ikon aplikasi yang berada di folder icons (icon-192.png dan icon-512.png). Jangan mengganti ikon aplikasi jika hanya ingin mengganti logo BPR.
