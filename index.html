@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123b70">
+  <meta name="description" content="SIMOLA SMS - Sistem Monitoring Lapangan BPR Sinar Mitra Sejahtera">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <title>SIMOLA SMS</title>
+  <style>
+    :root{--navy:#123b70;--blue:#1765ae;--ink:#18324d;--muted:#687b91;--bg:#f2f6fb;--line:#e3eaf2}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .hero{background:linear-gradient(135deg,var(--navy),#2178bd);color:white;padding:25px 20px 31px;border-radius:0 0 26px 26px}
+    .wrap{max-width:820px;margin:auto}.brand{display:flex;align-items:center;gap:16px;min-height:88px}
+    .logo-slot{width:82px;height:82px;flex:0 0 82px;border:1.5px dashed #c8def4;border-radius:14px;background:#ffffff18;display:grid;place-items:center;overflow:hidden}
+    .logo-slot img{display:none;width:100%;height:100%;object-fit:contain;background:white;padding:5px}
+    .logo-placeholder{text-align:center;color:#eaf4ff;font-size:10px;font-weight:700;letter-spacing:.8px;line-height:1.4;padding:5px}
+    .brand-copy{min-width:0}.eyebrow{font-size:12px;letter-spacing:1.5px;opacity:.9;font-weight:700}
+    h1{font-size:30px;margin:7px 0 4px}.hero p{margin:0;line-height:1.5;color:#e7f1fc;font-size:14px}
+    main{max-width:820px;margin:auto;padding:20px 16px 34px}.welcome h2{font-size:20px;margin:4px 0 5px}.welcome p{font-size:14px;color:var(--muted);margin:0 0 18px}
+    .notice{background:#fff8e7;border:1px solid #f0dfb2;color:#72551c;border-radius:13px;padding:13px 15px;font-size:13px;line-height:1.55;margin-bottom:18px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+    .tile{display:block;text-decoration:none;color:inherit;background:white;border:1px solid var(--line);border-radius:17px;padding:17px;min-height:150px;box-shadow:0 5px 18px #17385b0a}
+    .tile:focus-visible,button:focus-visible{outline:3px solid #78b8f4;outline-offset:3px}
+    .ico{height:43px;width:43px;display:grid;place-items:center;border-radius:13px;background:#eaf3ff;font-size:22px;margin-bottom:13px}
+    .tile h3{font-size:15px;margin:0 0 6px}.tile p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}
+    .section{font-size:16px;margin:25px 0 10px}.panel{background:white;border:1px solid var(--line);border-radius:15px;padding:16px;font-size:13px;line-height:1.65}
+    .panel strong{color:var(--navy)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    button{border:0;border-radius:11px;background:var(--navy);color:white;padding:11px 15px;font-weight:650;cursor:pointer}
+    .secondary{background:#eaf1f9;color:var(--navy)}
+    footer{text-align:center;color:#78889a;font-size:11px;padding:0 16px 26px;line-height:1.7}
+    @media(max-width:390px){.grid{grid-template-columns:1fr}.tile{min-height:unset}h1{font-size:26px}}
+  </style>
+</head>
+<body>
+<header class="hero"><div class="wrap brand">
+  <div class="logo-slot" aria-label="Tempat logo BPR">
+    <img id="bprLogo" src="assets/logo-bpr.png" alt="Logo BPR Sinar Mitra Sejahtera">
+    <div class="logo-placeholder" id="logoPlaceholder">TEMPAT<br>LOGO BPR</div>
+  </div>
+  <div class="brand-copy">
+    <div class="eyebrow">BPR SINAR MITRA SEJAHTERA</div>
+    <h1>SIMOLA SMS</h1>
+    <p>Sistem Monitoring Lapangan<br>Pelaporan dan pemantauan kegiatan dalam satu aplikasi.</p>
+  </div>
+</div></header>
+<main>
+  <section class="welcome"><h2>Selamat datang</h2><p>Pilih layanan sesuai tugas dan kewenangan Anda.</p></section>
+  <div class="notice"><strong>Perhatian:</strong> Data nasabah bersifat rahasia. Gunakan akun Google yang berwenang dan jangan membagikan tautan laporan atau tangkapan layar yang memuat data nasabah.</div>
+  <section class="grid" aria-label="Menu utama">
+    <a class="tile" href="https://docs.google.com/forms/d/1GXq1fjfWAt9ga8tancJUp2I1HZSiewPk9kpEWDRl9J0/viewform" target="_blank" rel="noopener noreferrer">
+      <div class="ico">📝</div><h3>Input Laporan</h3><p>Untuk Petugas Lapangan dan SPV. Mengisi laporan kegiatan lapangan.</p>
+    </a>
+    <a class="tile" href="https://datastudio.google.com/u/0/reporting/fd9178c8-ec71-403e-962f-cd42bedf23f6/page/B8fmF" target="_blank" rel="noopener noreferrer">
+      <div class="ico">📊</div><h3>Dashboard Monitoring</h3><p>Untuk Pimpinan dan pengguna yang diberi izin melihat laporan.</p>
+    </a>
+    <a class="tile" href="https://datastudio.google.com/u/0/reporting/fd9178c8-ec71-403e-962f-cd42bedf23f6/page/B8fmF" target="_blank" rel="noopener noreferrer">
+      <div class="ico">📋</div><h3>Riwayat Kunjungan</h3><p>Buka rekap kunjungan melalui dashboard yang sudah tersedia.</p>
+    </a>
+    <a class="tile" href="#panduan">
+      <div class="ico">ℹ️</div><h3>Panduan Penggunaan</h3><p>Petunjuk singkat penggunaan aplikasi SIMOLA SMS.</p>
+    </a>
+  </section>
+  <h2 class="section" id="panduan">Panduan singkat</h2>
+  <div class="panel">
+    <strong>Petugas Lapangan &amp; SPV</strong><br>Gunakan menu Input Laporan untuk mengisi formulir. Pastikan data yang dimasukkan benar sebelum dikirim.<br><br>
+    <strong>Pimpinan</strong><br>Gunakan Dashboard Monitoring. Akses data tetap mengikuti izin akun Google yang diberikan oleh pengelola laporan.<br><br>
+    <strong>Admin</strong><br>Pengaturan akun dan administrasi sistem belum diaktifkan pada versi awal ini. Jangan gunakan halaman ini sebagai sistem login admin.
+    <div class="actions"><button type="button" id="installBtn" hidden>Pasang aplikasi</button><button type="button" class="secondary" id="helpBtn">Cara memasang</button></div>
+    <p id="installHelp" hidden>Jika tombol Pasang aplikasi tidak muncul, buka menu browser Chrome (⋮), lalu pilih “Tambahkan ke layar utama” atau “Install aplikasi” jika tersedia.</p>
+  </div>
+</main>
+<footer>SIMOLA SMS · BPR Sinar Mitra Sejahtera<br>Versi awal aplikasi</footer>
+<script>
+  const bprLogo=document.getElementById("bprLogo");
+  bprLogo.addEventListener("load",()=>{bprLogo.style.display="block";document.getElementById("logoPlaceholder").style.display="none";});
+  bprLogo.addEventListener("error",()=>{bprLogo.style.display="none";});
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+  }
+  let installPrompt;
+  const installBtn=document.getElementById("installBtn");
+  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();installPrompt=e;installBtn.hidden=false;});
+  installBtn.addEventListener("click",async()=>{if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;installBtn.hidden=true;});
+  document.getElementById("helpBtn").addEventListener("click",()=>{const p=document.getElementById("installHelp");p.hidden=!p.hidden;});
+</script>
+</body></html>
